@@ -1,0 +1,259 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+/*COMIENZA RESET*/
+
+*{ 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    /* text-align: center; se utilizara flexbox, luego lo quitare */
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #5E6D8C; /*se aplico color para ver los cambios en la pagina*/
+}
+
+header{
+    background-color: #8F9FBF; /*se aplico color*/
+}
+
+header,ul{
+    display: flex; /*se aplico flex ordenar el navegador*/
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav ul{
+    padding: 0em 1.5em; /*se aplico para separar el nav del margen*/
+}
+
+footer{
+    background-color: #F2F2F2; /*se aplico color y tamaño de letra*/
+    font-size: 0.8em;
+}
+
+/*COMIENZA INDEX*/
+
+.logo{
+    width: 3.5em; /*margin y ancho al logo*/
+    margin: 0.25em;
+    
+}
+
+.navIndex a{
+    color: #F2F2F2; /*se aplico color y separacion entre links*/
+    margin: 0.3em;
+}
+
+.oversityStore{
+    font-size: 4em; /*se cambio el tamaño de la letra*/
+}
+
+.indexEnvios{
+    font-size: 1em; /*se cambio el tamaño de la letra*/
+}
+
+.contenedorIndex{
+    padding: 1em; /*para separar el header del los titulos*/
+}
+
+.contenedorIndex h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 2em;
+}
+
+.cartasContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cartas{
+    margin: 7em 1em; /*se aplico margin y whit a las cartas de informacion*/
+    width: 20em;
+}
+
+svg{
+    margin-bottom: 0.5em; /*se modifico tamaño a los iconos*/
+}
+
+.oferta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em; /*se modifico tamaño y se aplico margin*/
+    margin-top: 4em;
+    margin-bottom: 0.5em
+}
+
+.formularioOferta p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.formIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0em; /*se aplico margin al formulario*/
+}
+
+#correoElectronico{ /*se modifico la medida del espacio donde va el mail*/
+    height: 2em;
+    width: 17em;
+    outline: none;
+}
+
+.botonIndex{
+    border-radius: 0.5em; /*se modifico el boton de enviar*/
+    height: 2em;
+    width: 5em;
+    border: 0;
+    margin: 1em;
+}
+
+/*COMIENZA PRODUCTOS*/
+
+.shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em; /*se le dio margen y tamaño al titulo shop*/
+    margin: 1em;
+}
+
+.galeria{ /*aplique un poco flexbox a la galeria*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+
+/* .galeria p, h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+.contenedorImg p, h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.galeriaImg{ /*modifique el tamaño de las imagenes*/
+    width: 12em;
+}
+
+.contenedorImg{ /*aplique margen entre las imagenes para que haya un espacio entre ellas*/
+    margin-right: 1em;
+}
+
+.contenedorImg > p{ /*aplique color a los precios*/
+    color: aqua;
+    margin-top: 0.3em;
+}
+
+/*COMIENZA CONTACTO*/
+
+.contacto{ /*se le dio margen y tamaño al titulo contacto*/
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.formulario input, textarea{ /*se aplico borde*/
+    border: 1.5px solid black;
+    border-radius: 0.3em;
+}
+
+.formulario input{ /*se aplico margen, distacia, tamaño y saque las outlines a los inputs*/
+    width: 358px;
+    height: 26px;
+    margin: 0.5em;
+    outline: none;
+}
+
+.formulario textarea{ /*se aplico lo mismo que a los inputs pero ahora al textarea*/
+    width: 358px;
+    height: 100px;
+    resize: none;
+    margin: 0.5em;
+    outline: none;
+}
+
+.formulario button{ /*se modifico el boton de enviar y se le dio estilo*/
+    border-radius: 0.5em;
+    height: 2em;
+    width: 5em;
+    border: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+/*COMIENZA GUIA DE TALLES*/ 
+
+/*como veras no me quedo como en el wireframe pero hice que se parezca lo mas posible, creo que necesito otras herramientas para acomodarlas como quiero*/
+
+.guiaDeTalles{ /*se modifico el tamaño y se dio margen al titulo*/
+font-size: 1.5em;
+margin: 1em;
+}
+
+.prendas h2{ /*le di margen al titulo de cada uno de los talles*/
+    margin: 1em;
+}
+
+.remeras{ /*aplique las mismas propiedades a todas los talles para que quedaran iguales*/
+    padding-left: 736px;
+    padding-right: 716px;
+    margin-bottom: 2em;
+}
+
+.oversized{
+    padding-left: 736px;
+    padding-right: 716px;
+    margin-bottom: 2em;
+}
+
+.jeans{
+    padding-left: 736px;
+    padding-right: 716px;
+    margin-bottom: 2em;
+}
+
+.buzos{
+    padding-left: 736px;
+    padding-right: 716px;
+    margin-bottom: 2em;
+}
+
+/*COMIENZA POLITICA DE DEVOLUCION*/
+
+.tituloPolitica{ /*aplique tamaño separacion en el titulo*/
+    font-size: 1.5em;
+    margin: 2em;
+}
+
+.politicaParrafo{ /*aplique margen en todos los parrafor*/
+    font-size: 1.2em;
+    margin: 2em;
+}
+
+.politicaParrafo p{ /*cambie el tipo de letra de los parrafos en diferencia de los titulos*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
