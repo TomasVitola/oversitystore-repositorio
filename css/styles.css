@@ -6,13 +6,17 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    transition: 0.5s;
     margin: 0%;
     padding: 0%;
     /* text-align: center; se utilizara flexbox, luego lo quitare */
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
     background-color: #5E6D8C; /*se aplico color para ver los cambios en la pagina*/
 }
 
@@ -32,8 +36,61 @@ nav ul{
 }
 
 footer{
-    background-color: #F2F2F2; /*se aplico color y tamaño de letra*/
-    font-size: 0.8em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    /* font-size: 0.8em; */
+}
+
+.logo-footer{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.iconos-redes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.iconos-redes{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #F2F2F2;
+    background-image: url(../assets/img/instagram-logo.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.iconos-redes:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.iconos-redes:nth-last-of-type(2){
+    background-image: url(../assets/img/whatsapp-logo.png);
+}
+
+.iconos-redes:nth-last-of-type(3){
+    background-image: url(../assets/img/envelope-regular.png);
+}
+
+.copyright{
+    color: #F2F2F2;
+    opacity: 0.3;
+    text-align: center;
 }
 
 /*COMIENZA INDEX*/
