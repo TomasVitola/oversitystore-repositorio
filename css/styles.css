@@ -14,6 +14,7 @@
 }
 
 body{
+    text-align: center;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -37,7 +38,7 @@ nav ul{
 
 footer{
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     padding: 2rem 8%;
@@ -80,11 +81,11 @@ footer{
 }
 
 .iconos-redes:nth-last-of-type(2){
-    background-image: url(../assets/img/whatsapp-logo.png);
+    background-image: url(../assets/img/whatsapp-logo-.png);
 }
 
 .iconos-redes:nth-last-of-type(3){
-    background-image: url(../assets/img/envelope-regular.png);
+    background-image: url(../assets/img/correo-icono.png);
 }
 
 .copyright{
@@ -194,36 +195,30 @@ svg{
     margin: 1em;
 }
 
-.galeria{ /*aplique un poco flexbox a la galeria*/
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-bottom: 3em;
-}
-
-/* .galeria p, h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
-
-.contenedorImg p, h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.galeria-productos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: lightgreen; */
+    padding: 20px;
+    /* border: 1px solid black; */
 }
 
 .galeriaImg{ /*modifique el tamaño de las imagenes*/
-    width: 12em;
+    width: 15em;
 }
 
 .contenedorImg{ /*aplique margen entre las imagenes para que haya un espacio entre ellas*/
-    margin-right: 1em;
-}
-
-.contenedorImg > p{ /*aplique color a los precios*/
-    color: aqua;
-    margin-top: 0.3em;
+    width: 15em;
+    height: 24em;
+    background-color: gainsboro;
+    /* border: 4px solid black; */
+    margin: 15px;
+    text-align: center;
+    line-height: 40px;
 }
 
 /*COMIENZA CONTACTO*/
@@ -306,9 +301,22 @@ margin: 1em;
     margin: 2em;
 }
 
-.politicaParrafo{ /*aplique margen en todos los parrafor*/
-    font-size: 1.2em;
-    margin: 2em;
+.politica{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 3em;
+}
+
+.politicaParrafo{
+    margin: 1em;
+}
+
+.politicaParrafo h2{
+    font-size: 1em;
+    margin-bottom: 1em;
 }
 
 .politicaParrafo p{ /*cambie el tipo de letra de los parrafos en diferencia de los titulos*/
