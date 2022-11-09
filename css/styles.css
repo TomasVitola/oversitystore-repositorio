@@ -1,42 +1,44 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 /*COMIENZA RESET*/
 
-*{ 
+* {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    transition: 0.5s;
     margin: 0%;
     padding: 0%;
-    /* text-align: center; se utilizara flexbox, luego lo quitare */
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
+    background-color:#b2c5eb;
     text-align: center;
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: #5E6D8C; /*se aplico color para ver los cambios en la pagina*/
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
-    background-color: #8F9FBF; /*se aplico color*/
+
+header {
+    background-color: #8F9FBF;
 }
 
-header,ul{
-    display: flex; /*se aplico flex ordenar el navegador*/
+header,
+ul {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
-nav ul{
-    padding: 0em 1.5em; /*se aplico para separar el nav del margen*/
+nav ul {
+    padding: 0em 1.5em;
 }
 
-footer{
+footer {
     width: 100%;
     position: relative;
     bottom: 0;
@@ -44,18 +46,17 @@ footer{
     padding: 2rem 8%;
     background-color: #0e0e0e;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* font-size: 0.8em; */
 }
 
-.logo-footer{
+.logo-footer {
     height: 80px;
     margin-bottom: 1rem;
 }
 
-.iconos-redes-container{
+.iconos-redes-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +64,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.iconos-redes{
+.iconos-redes {
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -75,20 +76,20 @@ footer{
     margin: 1rem;
 }
 
-.iconos-redes:hover{
+.iconos-redes:hover {
     background-color: #121212;
     filter: invert(1);
 }
 
-.iconos-redes:nth-last-of-type(2){
+.iconos-redes:nth-last-of-type(2) {
     background-image: url(../assets/img/whatsapp-logo-.png);
 }
 
-.iconos-redes:nth-last-of-type(3){
+.iconos-redes:nth-last-of-type(3) {
     background-image: url(../assets/img/correo-icono.png);
 }
 
-.copyright{
+.copyright {
     color: #F2F2F2;
     opacity: 0.3;
     text-align: center;
@@ -96,44 +97,44 @@ footer{
 
 /*COMIENZA INDEX*/
 
-.logo{
-    width: 3.5em; /*margin y ancho al logo*/
+.logo {
+    width: 3.5em;
     margin: 0.25em;
-    
+
 }
 
-.navIndex a{
-    color: #F2F2F2; /*se aplico color y separacion entre links*/
+.navIndex a {
+    color: #F2F2F2;
     margin: 0.3em;
 }
 
-.oversityStore{
-    font-size: 4em; /*se cambio el tamaño de la letra*/
+.oversityStore {
+    font-size: 4em;
 }
 
-.indexEnvios{
-    font-size: 1em; /*se cambio el tamaño de la letra*/
+.indexEnvios {
+    font-size: 1em;
 }
 
-.contenedorIndex{
-    padding: 1em; /*para separar el header del los titulos*/
+.contenedorIndex {
+    padding: 1em;
 }
 
-.contenedorIndex h1{
+.contenedorIndex h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2px;
 }
 
-.productos{
+.productos {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     padding: 2em;
 }
 
-.cartasContainer{
+.cartasContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -141,167 +142,285 @@ footer{
     text-align: center;
 }
 
-.cartas{
-    margin: 7em 1em; /*se aplico margin y whit a las cartas de informacion*/
+.cartas {
+    margin: 7em 1em;
     width: 20em;
 }
 
-svg{
-    margin-bottom: 0.5em; /*se modifico tamaño a los iconos*/
+svg {
+    margin-bottom: 0.5em;
 }
 
-.oferta{
+.oferta {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5em; /*se modifico tamaño y se aplico margin*/
+    font-size: 1.5em;
     margin-top: 4em;
     margin-bottom: 0.5em
 }
 
-.formularioOferta p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.formIndex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1em 0em; /*se aplico margin al formulario*/
+.formularioOferta{
+    margin-bottom: 7em;
 }
 
-#correoElectronico{ /*se modifico la medida del espacio donde va el mail*/
+.formularioOferta p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0em;
+}
+
+#correoElectronico {
     height: 2em;
     width: 17em;
     outline: none;
 }
 
-.botonIndex{
-    border-radius: 0.5em; /*se modifico el boton de enviar*/
-    height: 2em;
-    width: 5em;
-    border: 0;
+.botonIndex {
     margin: 1em;
+}
+
+.botonIndex:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /*COMIENZA PRODUCTOS*/
 
-.shop{
+.shop {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5em; /*se le dio margen y tamaño al titulo shop*/
-    margin: 1em;
-}
-
-.galeria-productos{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: lightgreen; */
-    padding: 20px;
-    /* border: 1px solid black; */
-}
-
-.galeriaImg{ /*modifique el tamaño de las imagenes*/
-    width: 15em;
-}
-
-.contenedorImg{ /*aplique margen entre las imagenes para que haya un espacio entre ellas*/
-    width: 15em;
-    height: 24em;
-    background-color: gainsboro;
-    /* border: 4px solid black; */
-    margin: 15px;
-    text-align: center;
-    line-height: 40px;
-}
-
-/*COMIENZA CONTACTO*/
-
-.contacto{ /*se le dio margen y tamaño al titulo contacto*/
     font-size: 1.5em;
     margin: 1em;
 }
 
-.formulario input, textarea{ /*se aplico borde*/
-    border: 1.5px solid black;
-    border-radius: 0.3em;
+.botonCompra,
+.botonIndex{
+    border: 3px solid rgba(100, 100, 100, 0.1);
+    padding: 6px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FFF;
+    background-size: 300%;
+    background-image: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
 }
 
-.formulario input{ /*se aplico margen, distacia, tamaño y saque las outlines a los inputs*/
-    width: 358px;
-    height: 26px;
-    margin: 0.5em;
-    outline: none;
+.botonCompra:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-.formulario textarea{ /*se aplico lo mismo que a los inputs pero ahora al textarea*/
-    width: 358px;
-    height: 100px;
-    resize: none;
-    margin: 0.5em;
-    outline: none;
+.galeria-productos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.formulario button{ /*se modifico el boton de enviar y se le dio estilo*/
-    border-radius: 0.5em;
-    height: 2em;
-    width: 5em;
-    border: 0;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
+.galeriaImg {
+    width: 15em;
+    border-radius: 10px;
 }
 
-/*COMIENZA GUIA DE TALLES*/ 
-
-/*como veras no me quedo como en el wireframe pero hice que se parezca lo mas posible, creo que necesito otras herramientas para acomodarlas como quiero*/
-
-.guiaDeTalles{ /*se modifico el tamaño y se dio margen al titulo*/
-font-size: 1.5em;
-margin: 1em;
+.contenedorImg {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 15.1em;
+    height: 24em;
+    margin: 15px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 300ms ease;
 }
 
-.prendas h2{ /*le di margen al titulo de cada uno de los talles*/
+.contenedorImg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*COMIENZA CONTACTO*/
+
+.contacto {
+    font-size: 1.5em;
     margin: 1em;
 }
 
-.remeras{ /*aplique las mismas propiedades a todas los talles para que quedaran iguales*/
-    padding-left: 736px;
-    padding-right: 716px;
+.formulario {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2.5em;
+}
+
+.formGrupo {
+    position: relative;
+    --color: #5757577e;
+}
+
+.formInput {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.formInput:focus,
+.formInput:not(:placeholder-shown) {
+    color: #4d4646;
+}
+
+.formInput:focus+.formLabel,
+.formInput:not(:placeholder-shown)+.formLabel {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+
+.formLabel {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.formSubmit {
+    background: #3866f2;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.formLine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.formInput:focus~.formLine,
+.formInput:not(:placeholder-shown)~.formLine {
+    transform: scale(1);
+}
+
+
+/*COMIENZA GUIA DE TALLES*/
+
+/*como veras no me quedo como en el wireframe pero hice que se parezca lo mas posible, creo que necesito otras herramientas para acomodarlas como quiero*/
+
+
+.guiaDeTalles {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.prendas li{
+    margin: 1em;
+}
+
+.prendas h2 {
+    margin: 1em;
+}
+
+.remeras {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
     margin-bottom: 2em;
 }
 
-.oversized{
-    padding-left: 736px;
-    padding-right: 716px;
+.oversized {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
     margin-bottom: 2em;
 }
 
-.jeans{
-    padding-left: 736px;
-    padding-right: 716px;
+.jeans {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     margin-bottom: 2em;
 }
 
-.buzos{
-    padding-left: 736px;
-    padding-right: 716px;
+.buzos {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     margin-bottom: 2em;
 }
 
 /*COMIENZA POLITICA DE DEVOLUCION*/
 
-.tituloPolitica{ /*aplique tamaño separacion en el titulo*/
+.tituloPolitica {
     font-size: 1.5em;
     margin: 2em;
 }
 
-.politica{
+.politica {
     margin: 0 auto;
     width: 40%;
     display: flex;
@@ -310,15 +429,48 @@ margin: 1em;
     margin-bottom: 3em;
 }
 
-.politicaParrafo{
+.politicaParrafo {
     margin: 1em;
 }
 
-.politicaParrafo h2{
+.politicaParrafo h2 {
     font-size: 1em;
     margin-bottom: 1em;
 }
 
-.politicaParrafo p{ /*cambie el tipo de letra de los parrafos en diferencia de los titulos*/
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.politicaParrafo p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:767px) {
+    header ul{
+        font-size: small;
+    }
+    
+    .copyright{
+        font-size: small;
+    }
+
+    .galeria-productos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
+    .shop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .contenedorImg{
+        margin: 4em;
+    }
 }

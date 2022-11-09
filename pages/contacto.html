@@ -19,7 +19,6 @@
             <ul>
                 <li><a href="../pages/productos.html">Productos</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="../pages/galeria.html">Galeria</a></li>
                 <li><a href="../pages/guia-de-talles.html">Guia de talles</a></li>
                 <li><a href="../pages/politica-de-devolucion.html">Politica de devolucion</a></li>
             </ul>
@@ -29,25 +28,43 @@
         <div class="contacto">
             <h1>CONTACTO</h1>
         </div>
-        <section class="formulario">
-            <form>
-                <div>
-                    <input type="text" placeholder="Nombre">
-                </div>
-                <div>
-                    <input type="email" placeholder="Coloque su correo aqui">
-                </div>
-                <div>
-                    <input type="telefono" id="telefono" name="telefono" placeholder="Telefono">
-                </div>
-                <div>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                </div>
-                <div>
-                    <button>Enviar</button>
+        <!-- <section class="formulario"> -->
+            <form class="formulario">
+                <div class="formContainer">
+                    <div class="formGrupo">
+                        <input type="text" id="name" class="formInput" placeholder=" ">
+                        <label for="name" class="formLabel">Nombre:</label>
+                        <span class="formLine"></span>
+                    </div>
+
+                    <div class="formGrupo">
+                        <input type="text" id="mail" class="formInput" placeholder=" ">
+                        <label for="mail" class="formLabel">Correo Electronico:</label>
+                        <span class="formLine"></span>
+                    </div>
+
+                    <div class="formGrupo">
+                        <input type="text" id="telefono" class="formInput" placeholder=" ">
+                        <label for="telefono" class="formLabel">Telefono:</label>
+                        <span class="formLine"></span>
+                    </div>
+
+                    <input type="submit" class="formSubmit" value="Enviar">
+                    <!-- <div>
+                        <input type="email" placeholder="Coloque su correo aqui">
+                    </div>
+                    <div>
+                        <input type="telefono" id="telefono" name="telefono" placeholder="Telefono">
+                    </div>
+                    <div>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div> -->
                 </div>
             </form>
-        </section>
+        <!-- </section> -->
     </main>
     <footer>
         <img src="../assets/img/logo.png" alt="" class="logo-footer">
