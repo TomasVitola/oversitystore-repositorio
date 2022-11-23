@@ -1,0 +1,26 @@
+@media screen and (max-width:767px) {
+    .galeria-productos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .contenedorImg{
+        backdrop-filter: none;
+    }
+
+    .shop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .contenedorImg {
+        margin: 4em;
+    }
+}

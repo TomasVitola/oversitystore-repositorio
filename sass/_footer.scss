@@ -1,0 +1,49 @@
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: $colorFooter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logo-footer{
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+    .iconos-redes-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    .iconos-redes {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border: 1px solid #F2F2F2;
+        background-image: url(../assets/img/instagram-logo.png);
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        margin: 1rem;
+        &:hover {
+            background-color: #121212;
+            filter: invert(1);
+        }
+        &:nth-last-of-type(2) {
+            background-image: url(../assets/img/whatsapp-logo-.png);
+        }
+        &:nth-last-of-type(3) {
+            background-image: url(../assets/img/correo-icono.png);
+        }
+    }
+    .copyright {
+        color: #F2F2F2;
+        opacity: 0.3;
+        text-align: center;
+    }
+}

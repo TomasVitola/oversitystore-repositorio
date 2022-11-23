@@ -1,0 +1,174 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #8F9FBF;
+}
+
+.botonHeader {
+  border: 3px solid rgba(100, 100, 100, 0.1);
+  padding: 6px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #FFF;
+  background-size: 300%;
+  background-image: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
+}
+.botonHeader:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+body {
+  background-color: #b2c5eb;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .logo-footer {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+footer .iconos-redes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+footer .iconos-redes {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #F2F2F2;
+  background-image: url(../assets/img/instagram-logo.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+footer .iconos-redes:hover {
+  background-color: #121212;
+  filter: invert(1);
+}
+footer .iconos-redes:nth-last-of-type(2) {
+  background-image: url(../assets/img/whatsapp-logo-.png);
+}
+footer .iconos-redes:nth-last-of-type(3) {
+  background-image: url(../assets/img/correo-icono.png);
+}
+footer .copyright {
+  color: #F2F2F2;
+  opacity: 0.3;
+  text-align: center;
+}
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.botonCompra {
+  border: 3px solid rgba(100, 100, 100, 0.1);
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #FFF;
+  background-size: 300%;
+  background-image: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
+}
+.botonCompra:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.galeria-productos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.galeriaImg {
+  width: 15em;
+  border-radius: 10px;
+}
+
+.contenedorImg {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 15.1em;
+  height: 24em;
+  margin: 15px;
+  text-align: center;
+  line-height: 40px;
+  transition: all 300ms ease;
+}
+.contenedorImg h2 {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.contenedorImg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .galeria-productos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 1em;
+  }
+  .contenedorImg {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedorImg {
+    margin: 4em;
+  }
+}/*# sourceMappingURL=main.css.map */
