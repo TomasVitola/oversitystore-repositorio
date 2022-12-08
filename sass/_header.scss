@@ -1,8 +1,9 @@
 header {
-    background-color: $colorHeader
+    background-color: $colorHeader;
 }
 
-.botonHeader{
+.botonIndex{
+    text-decoration: none;
     border: 3px solid rgba(100, 100, 100, 0.1);
     padding: 6px;
     font-family: 'Roboto', sans-serif;
@@ -14,5 +15,6 @@ header {
     &:hover{
         transform: scale(1.1);
         cursor: pointer;
+        color: #FFF;
     }
 }

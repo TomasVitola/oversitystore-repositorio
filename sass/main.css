@@ -11,7 +11,8 @@ header {
   background-color: #8F9FBF;
 }
 
-.botonHeader {
+.botonIndex {
+  text-decoration: none;
   border: 3px solid rgba(100, 100, 100, 0.1);
   padding: 6px;
   font-family: "Roboto", sans-serif;
@@ -21,9 +22,10 @@ header {
   background-size: 300%;
   background-image: linear-gradient(to left, #00B7DA, #161569, #00B7DA);
 }
-.botonHeader:hover {
+.botonIndex:hover {
   transform: scale(1.1);
   cursor: pointer;
+  color: #FFF;
 }
 
 body {
@@ -94,6 +96,8 @@ footer .copyright {
 }
 
 .botonCompra {
+  text-decoration: none;
+  padding: 10px;
   border: 3px solid rgba(100, 100, 100, 0.1);
   font-family: "Roboto", sans-serif;
   border-radius: 8px;
@@ -105,6 +109,7 @@ footer .copyright {
 .botonCompra:hover {
   transform: scale(1.1);
   cursor: pointer;
+  color: #FFF;
 }
 
 .galeria-productos {
@@ -127,8 +132,6 @@ footer .copyright {
 .contenedorImg {
   background: rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(9px);
-          backdrop-filter: blur(9px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 15.1em;
@@ -155,10 +158,6 @@ footer .copyright {
     grid-template-rows: auto;
     justify-content: center;
     padding: 1em;
-  }
-  .contenedorImg {
-    -webkit-backdrop-filter: none;
-            backdrop-filter: none;
   }
   .shop {
     display: flex;
